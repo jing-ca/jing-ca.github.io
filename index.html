@@ -1,132 +1,196 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	<!-- meta tag lives in the head of the file. It is use to define about data. Decription is useful for SEO.-->
-		<meta charset="UTF-8">
-		<meta name="description" content="This is an awesome website">
-		<meta name="author" content="Sinath">
-		<meta name="keywords" content=" HTML, Tutorial, ">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" <!-- it controls how your website display on ->
-		<title>Sinath's Website</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-			
-			</nav>
-		</header>
-		<main>
-			<article> 
-			<!-- put all your blog here or add article to to divide up your section. Use head hierarchy to design -->
-				<section>
-					<h1> Image</h1>
-					<a href="portfolio.html"
-						<img width="100" height= "100" src="cat.jpg" alt= Cute Cat> 
-					</a>
-				</section>
-				<a href="portfolio.html"target="_blank"><h2>Portfolio<h2></a>
-				<a href="dir1/about.html"target="_blank"><h2>About<h2></a>
-				<a href="cat.jpg"target="_blank"><h2>Cat<h2></a>
-				<section> 
-					<aside>
-					<!-- e.g. advertising on your website. This content is on the page, 
-					it's getting to show to the user, but it's not related to the core content of the website -->
-					</aside>
-				</section>
-				
-				<section>
-					<video src="sake-bomb-fam.mov" poster="thumb.jpg" loop controls width="500"> </video>
-				</section>
-				</section>
-				<section>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1iYUQW6RovY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<section>
-					<ol type="i">
-						<li><a href="#">Apples</a></li>
-						<li>Organges
-							<ol>
-								<li> item1</li>
-							</ol>
-						</li>
-						<li>Bananas</li>
-					</ol>
-				</section>
-				<section>
-				<!-- description list-->
-				<dl>
-					<dt>Apples</dt>
-					<dd>- They are red</dd>
-					<dt>Organges</dt>
-					<dd>- They are oranges</dd>
-				</dl>
-				</section>
-				<section>
-				<!--create a table -->
-					<table>
-						<thead>
-						<caption><h2> List of Numbers</h2></caption>
-						<tr>
-							<th>num1</th>
-							<th>num2</th>
-							<th>num3</th>
-						</thead>
-						</tr>
-						<tbody>
-						<tr>
-							<td colspan="3">one</td>
-							<td>two</td>
-							<td>three</td>
-							<td>three and a half</td>
-						</tr>
-						<tr>
-							<td>four</td>
-							<td>five</td>
-							<td>six</td>
-						</tr>
-					<tbody>
-					</table>
-				</section>
-						
-			</article>
-	<!-- creating containers. CSS, a language use to style your pages. html have two main basic ways
-			1. block: take up an entire of a page 2. in-line: can have two in-line elemenet next to each other-->
-		<!-- example of in-line CSS elemenet-->	
-		<a href="#"> link1 </a>
-		<a href="#"> link2 </a>
-	<hr>
-		<!-- block element example-->
-		
-		<p>Paragraph1</p>
-		
-		<p>Paragraph2</p
-		
-	<!-- spans are in-line containers. div are block containers -->
-		<span>Span1</span>
-		<span>Span1</span>
-	<hr>
-		<div>Div1</div>
-		<div>Div2</div>
-	
-	<!-- input tag: radio button, text box, etcs. Though we define this in an html tags, they are not functional. It requires java script to make it functional get input from that.  -->
-	<input type="text" value="Enter Your Username"/>
-	<input type ="password"  value="Enter Your Password"/>
-	<input type = "date"/>
-	<input type ="email" value="Enter Your Email"/>
-	<input type ="submit"/>
-	<input type ="radio"/>
-	<textarea rows="10" cols="30">
-	Enter a paragraph
-	</textarea>
-	
-	<!-- a Form element, a wrapper for user input. If you want to accept input from a user, you'll need another language.-->
-	<!-- iframe tag allows you to embed another website inside your html.-->
-	<iframe src="file:///C:/Users/sinath.neang/Documents/ga_site/portfolio.html" frameborder="0" width="1000">Sorry</iframe>
-	
+<html lang="en">
 
-		</main>
-		<footer>
-		
-		</footer>
-		
-	</body>
+<head>
+	<!--BootstratpCDN to deliver cahced version of Bootstrap's complied CSS and JS.-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	<!--Bootstrap compiled Javascript, CDN version of jQuery and Popper.js. -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<!--metadata-->
+		<meta charset ="UTF-8">
+		<meta nane="description" content="This is Sinath Neang's personal website, where reader can find her resume, portfolio, and blog.">
+		<meta name="author" content="Sinath Neang">
+		<meta name="keyword" content="Sinath Neang, Resume, Portfolio, Blog">
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+			<!--This viewpoint device-width, initial-scale controls how your webiste display on -->
+		<!-- style dark mode --> 
+		<script> 
+		function myFunction() {
+			var element = document.body;
+			element.classList.toggle ("dark-mode");
+		}
+		</script>
+
+		<style>
+		body {
+
+			background-color: white;
+			color: black;
+		}
+		.dark-mode {
+			 background-color: black;
+			 color: white;
+		}	
+		</style>
+
+		<title>Sinath Neang</title>
+	<!-- Bootstrap core CSS -->
+	  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	  <!-- Custom fonts for this template -->
+	  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	  <!-- Bootstrap core CSS -->
+	  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	  <!-- Custom fonts for this template -->
+	  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+	  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+	  <!-- Custom styles for this template -->
+	  <link href="css/agency.min.css" rel="stylesheet">
+
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  		<div class="container">
+    	<a class="navbar-brand" href="index.html">Sinath Neang</a>
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+    	<div class="collapse navbar-collapse" id="navbarResponsive">
+      	<ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+        	<a class="nav-link" href="about.html">About
+        	<span class="sr-only">(current)</span>
+        	</a>
+        </li>
+        <li class="nav-item">
+          	<a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          	<a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      	</ul>
+    	</div>
+    	</div>
+		</nav>
+	<!-- Header -->
+	<button class= "btn btn-primary" onclick="myFunction() "> Toggle dark mode </button>
+	<header class="masthead">
+	  <div class="container h-100">
+	    <div class="row h-100 align-items-center">
+	      <div class="col-12 text-center">
+	      	<br></br>
+	        <h2 class="font-weight-light">Hi, I'm Sinath.</h2>
+	        <p class="lead">A Product Manager, coffee enthusiast, and traveler.</p>
+	        <div class="timeline-image">
+                <img class="rounded-circle img-fluid" src="sinath.neang.jpg" alt="">
+              </div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+	
+	<!-- Page Content -->
+	<section class="py-5">
+	  <div class="container">
+	    <h2 class="font-weight-light text-center"><b>Mission</b></h2>
+	    <p class= "text-center">This is my first attempt at building a personal website. My goal is find new ways to do things that I love and enjoy, and able to share experiences with the broader community of family, friends, and colleagues. I want to take this opportunity of building a website to showcase my technical aptitude in design, product management, and interests.</p>
+	    &nbsp;
+	  </div>
+	</section>
+	<!--/.container -->
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+      	<br></br>
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Your Website 2020</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+            <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--About - placeholder for resume.-->
+
+<!--Portfolio - placeholder for web design, UI/UX, product design, related work. -->
+
+<!--Blog - placeholder for stroy telling on food & teavel -->
+
+<!--Contact - contact me. Set up a personal work email.-- >
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+
+</body>
 </html>
